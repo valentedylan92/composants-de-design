@@ -1,0 +1,27 @@
+.container{
+  background: #7b7874;
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination{
+  height: 90px;
+  width: 763px;
+  background-color: #E4E4E4;
+  box-sizing: border-box;
+  padding: 25px 20px;
+
+  &__item{
+    display: inline-block;
+  }
+  &__link{
+    color:white;
+    @include button( #3c464f,10px,30px);
+    width: 70px;
+    height: 35px;
+    box-sizing: border-box;
+  }
+}
