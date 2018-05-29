@@ -1,0 +1,131 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbdad9;
+  font-family: 'Source Sans Pro','Arial', sans-serif;
+}
+
+.cards {
+  width: 1156px;
+  height: 450px;
+  background-color: white;
+  padding: 20px 50px 20px 75px;
+  box-sizing: border-box;
+}
+.cards__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.cards__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+.cards__more {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+.cards__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  max-width: 195px;
+}
+.card__rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card__arrow {
+  margin-left: 5px;
+  font-size: 19px;
+}
+.card__img {
+  margin-bottom: 5px;
+}
+.card__text {
+  color: #4a4a4a;
+  margin-bottom: 5px;
+}
+.card__price {
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 5px;
+}
+.card__item {
+  margin-right: 2px;
+}
+.card__link {
+  color: #00a69c;
+}
+.card__comment {
+  font-size: 14px;
+}

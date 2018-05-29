@@ -1,0 +1,71 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  @include center-flex();
+  background-color: #dbdad9;
+  font-family: 'Source Sans Pro','Arial', sans-serif;
+}
+.cards{
+  width: 1156px;
+  height: 450px;
+  background-color: white;
+  padding: 20px 50px 20px 75px;
+  box-sizing: border-box;
+
+  &__header{
+    @include flex(row,space-between,center);
+    margin-bottom: 35px;
+
+  }
+
+  &__title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+  &__more{
+    text-decoration: none;
+    color : #4a4a4a;
+  }
+
+  &__container{
+    @include flex(row,space-between,flex-start);
+  }
+}
+
+.card{
+  max-width: 195px;
+  &__rating{
+    @include flex(row,flex-start,center);
+  }
+
+  &__arrow{
+    margin-left: 5px;
+    font-size: 19px;
+  }
+
+  &__img{
+    margin-bottom: 5px;
+  }
+
+  &__text{
+    color: #4a4a4a;
+    margin-bottom: 5px;
+
+  }
+  &__price{
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  &__item{
+        margin-right: 2px;
+  }
+  &__link{
+    color:#00a69c;
+  }
+  &__comment{
+    font-size: 14px;
+
+  }
+}
