@@ -69,9 +69,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #E4E4E4;
   box-sizing: border-box;
   padding: 25px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pagination__item {
-  display: inline-block;
+.pagination__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .pagination__link {
   color: white;
@@ -80,10 +85,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-border-radius: 5px;
   border-radius: 5px;
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s background ease;
   background-color: #3c464f;
-  padding: 10px 30px;
-  width: 70px;
-  height: 35px;
+  padding: 12px 30px;
+  font-weight: 700;
+  font-family: 'Open sans','Arial', sans-serif;
   box-sizing: border-box;
+}
+.pagination__link:hover {
+  background-color: #262c32;
+}
+
+.is-active {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s background ease;
+  background-color: #009de5;
+  padding: 12px 30px;
+}
+.is-active:hover {
+  background-color: #007ab2;
+}
+
+.is-empty {
+  background-color: transparent;
+  color: #263059;
+}
+
+.is-empty:hover {
+  background-color: transparent;
 }

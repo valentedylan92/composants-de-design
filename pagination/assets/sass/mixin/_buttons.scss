@@ -4,7 +4,13 @@
       -ms-border-radius: 5px;
           border-radius: 5px;
           text-decoration: none;
-          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.7s background ease;
           background-color: $color;
           padding: $side1 $side2;
+          &:hover{
+            background-color:darken($color, 10%);
+          }
 }

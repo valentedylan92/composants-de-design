@@ -13,15 +13,34 @@
   background-color: #E4E4E4;
   box-sizing: border-box;
   padding: 25px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: url(../img/02.pagination.png);
 
-  &__item{
-    display: inline-block;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   &__link{
     color:white;
-    @include button( #3c464f,10px,30px);
-    width: 70px;
-    height: 35px;
+    @include button( #3c464f,12px,30px);
+    font-weight: 700;
+    font-family: 'Open sans','Arial', sans-serif;
     box-sizing: border-box;
   }
+}
+
+.is-active{
+  @include button( #009de5,12px,30px);
+}
+
+.is-empty{
+  background-color: transparent;
+  color : #263059;
+}
+
+.is-empty:hover{
+  background-color: transparent;
 }
