@@ -1,0 +1,39 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+  @include center-flex();
+  background-color: #dbdad9;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+.section{
+  &__container{
+    width:1424px;
+    height:362px;
+    background-color: white;
+    @include center-flex();
+    flex-direction: column;
+  }
+
+  &__title{
+    font-size: 57px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__text{
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+  &__link{
+    color : #55bb8d;
+    text-decoration: none;
+  }
+  &__cta{
+    @include button(#55bb8d, 25px,40px);
+    color:white;
+    font-size: 20px;
+
+  }
+}
