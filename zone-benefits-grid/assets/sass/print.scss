@@ -1,3 +1,7 @@
 @import "compass/reset";
 
-@import "mixins/buttons"
+// mixins
+@import "mixins/mixins";
+
+//partials
+@import "partials/grid-plugin"

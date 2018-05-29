@@ -14,3 +14,23 @@
             background-color:darken($color, 10%);
           }
 }
+
+@mixin center-flex() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin square($side){
+    height:$side;
+    width:$side;
+}
+
+@mixin flex ($direction,$justify,$align){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

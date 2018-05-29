@@ -1,0 +1,51 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #dbdad9;
+  @include center-flex();
+  font-family: 'Open Sans', 'Arial', sans-serif;
+
+}
+
+.grid{
+  width: 1112px;
+  height: 366px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 30px 40px;
+  &__inner{
+    @include flex(row,center,flex-start);
+
+  }
+}
+
+.benefits{
+  width: 25%;
+  @include flex(column, flex-start,flex-start);
+  &__title{
+    font-size: 25px;
+    color:#9bd7bb;
+    margin-bottom: 20px;
+  }
+  &__text{
+    color:#5E5E5E;
+    line-height: 1.7;
+    font-size: 15px;
+    padding-right: 45px;
+  }
+  &__img{
+    margin: auto;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+  &__subtext{
+    font-size: 17px;
+  }
+}
+
+#npm{
+  padding: 47px; // Fix img
+  height: auto;
+  width: 140px;
+}
