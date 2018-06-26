@@ -9,6 +9,106 @@
 .section{
   width: 1230px;
   height: 460px;
+  box-sizing: border-box;
   background-color: white;
+  padding: 2px;
+}
+.ecommerce{
   @include flex(row,flex-start,center)
+
+}
+
+.item{
+  border : 1px solid #D8D8D8;
+  box-sizing: border-box;
+  width: 25%;
+  min-height: 456px;
+  &__top{
+    @include flex(row,flex-start,center);
+  }
+  &__highlight{
+    background-color: #DD1E35;
+    padding:5px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color : white;
+    font-weight: 800;
+  }
+  &__reduction{
+    background-color: white;
+    padding:5px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color : #DD1E35;
+    font-weight: 700;
+  }
+  &__img{
+    height:150px;
+    width: 170px;
+    display: block;
+    margin: auto;
+  }
+  &__descriptif{
+    @include flex(column,flex-start, flex-start);
+    padding: 0 30px;
+    margin-bottom: 40px;
+  }
+  &__name{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &__description{
+    font-size: 14px;
+    color: #A1A1A1;
+    font-weight: 600;
+  }
+  &__price{
+    padding: 0 30px;
+    @include flex (row,flex-start,flex-end)
+  }
+  &__new{
+    font-size: 22px;
+    font-weight: 700;
+    color: #DD1E35;
+    @include flex (row,flex-start,flex-start);
+    &--decimal{
+      font-size: 15px;
+      padding-left: 3px;
+    }
+  }
+
+  &__old{
+    font-size: 14px;
+    @include flex (row,flex-start,flex-start);
+    text-decoration: line-through;
+    &--decimal{
+      font-size: 9px;
+      padding-left: 3px;
+    }
+  }
+
+  &__bottom{
+    padding: 5px 30px 0 30px;
+  }
+
+  &__promo{
+    font-size: 10px;
+    text-decoration: none;
+    color: #A1A1A1;
+  }
+
+  &__number{
+    font-size: 10px;
+    font-weight: 700;
+    color: #DD1E35;
+
+    @include flex (row,flex-start,flex-start);
+    &--decimal{
+      font-size: 6px;
+      display: inline;
+      padding-left: 3px;
+    }
+  }
+
 }
