@@ -1,0 +1,97 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  @include center-flex();
+  background-color: #dbdad9;
+  font-family: 'Open Sans','Arial', sans-serif;
+}
+
+.section--related{
+  width: 1075px;
+  height: 400px;
+  background: white;
+}
+
+.related{
+  padding: 35px;
+  &__top{
+    border-bottom: solid 1px #D6D6D7;
+    @include flex(row,space-between,flex-start);
+  }
+  &__title{
+    font-size: 20px;
+    color:#323233;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #323233;
+  }
+  &__link{
+    color :#9B9C9D;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  &__icon{
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  &__bottom{
+    @include flex (row,flex-start,flex-start);
+    flex-wrap: wrap;
+  }
+}
+
+.box{
+  width: 50%;
+  &__title{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #323233;
+    font-weight: 700;
+  }
+  &__inner{
+    @include flex(row,flex-start,flex-start);
+    padding-top: 10px;
+  }
+  &__left{
+    margin-right: 10px;
+  }
+  &__img{
+    @include square(40px);
+    border-radius: 100%;
+  }
+
+  &__name,&__cat{
+    font-size: 12px;
+    margin-bottom: 3px;
+    display: inline-block;
+    color: #323233;
+    text-decoration: none;
+  }
+
+  &__cat::before{
+    content: "in";
+    padding-right: 5px;
+    color: #9B9C9D;
+  }
+
+  &__date,&__time{
+    font-size: 12px;
+    color: #9B9C9D;
+  }
+  &__time{
+    display: inline-block;
+    margin-left:15px;
+    position: relative;
+  }
+  &__time::before{
+    content: ".";
+    color: #9B9C9D;
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -9px;
+    font-weight: 700;
+  }
+}
