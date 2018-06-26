@@ -1,0 +1,157 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+  @include center-flex();
+  background-color: #dbdad9;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+.section{
+  width: 1230px;
+  height: 460px;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 2px;
+}
+.ecommerce{
+  @include flex(row,flex-start,center)
+
+}
+
+.item{
+  border : 1px solid #D8D8D8;
+  box-sizing: border-box;
+  width: 25%;
+  min-height: 456px;
+  @include flex(column,flex-start,center);
+  &__top{
+    @include flex(row,flex-start,center);
+    align-self: flex-start;
+  }
+  &__highlight{
+    background-color: #DD1E35;
+    padding:5px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color : white;
+    font-weight: 800;
+  }
+  &__reduction{
+    background-color: white;
+    padding:5px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color : #DD1E35;
+    font-weight: 700;
+  }
+  &__img{
+    height:170px;
+    width: 170px;
+    display: block;
+    margin: auto;
+  }
+  &__descriptif{
+    @include flex(column,flex-start, flex-start);
+    padding: 20px 30px 0 30px;
+    margin-bottom: 40px;
+  }
+  &__name{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &__description{
+    font-size: 13px;
+    color: #A1A1A1;
+    font-weight: 600;
+  }
+  &__price{
+    padding: 0 30px;
+    @include flex (row,flex-start,flex-end)
+  }
+  &__new{
+    font-size: 22px;
+    font-weight: 700;
+    color: #DD1E35;
+    @include flex (row,flex-start,flex-start);
+    &--decimal{
+      font-size: 15px;
+      padding-left: 3px;
+    }
+  }
+
+  &__old{
+    font-size: 14px;
+    @include flex (row,flex-start,flex-start);
+    text-decoration: line-through;
+    margin-left: 5px;
+    &--decimal{
+      font-size: 9px;
+      padding-left: 3px;
+    }
+  }
+
+  &__bottom{
+    padding: 5px 20px 0 20px;
+  }
+
+  &__promo{
+    font-size: 10px;
+    text-decoration: none;
+    color: #A1A1A1;
+  }
+
+  &__number{
+    font-size: 10px;
+    font-weight: 700;
+    color: #DD1E35;
+    position: relative;
+    &--decimal{
+      font-size: 7px;
+      padding-left: 3px;
+      position: absolute;
+      top: 3px;
+    }
+  }
+
+  &__cta{
+    @include button(#eeb03e,white,15px,30px);
+    font-size: 13px;
+    font-weight: 700;
+    border-radius : 3px;
+    margin-top: 40px;
+  }
+  &__icon{
+    margin-right: 3px;
+  }
+  &__timeleft{
+  @include flex(column,center,center);
+  margin-top: auto;
+  padding-bottom: 15px;
+  width: 100%;
+}
+  &__timetext{
+    color: #DD1E35;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+}
+
+.timing{
+  @include flex (row,flex-start,flex-start);
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  &__done{
+    height:5px;
+    background: #d8d8d8;
+    flex: 2;
+  }
+  &__left{
+    height:5px;
+    flex: 1;
+    background: #DD1E35;
+  }
+}
