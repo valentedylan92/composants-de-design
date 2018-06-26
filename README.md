@@ -11,5 +11,14 @@
 
 ## Liens des différents composants :
 
-
+1. [Footer Social](https://valentedylan92.github.io/composants-de-design/footer-social/index.html)
+2. [Pagination](https://valentedylan92.github.io/composants-de-design/pagination/index.html)
+3. [Zone Benefits Grid](https://valentedylan92.github.io/composants-de-design/zone-benefits-grid/index.html)
+4. [Zone Cards](https://valentedylan92.github.io/composants-de-design/zone-cards/index.html)
+5. [Zone CTA](https://valentedylan92.github.io/composants-de-design/zone-CTA/index.html)
+6. [Zone Hero](https://valentedylan92.github.io/composants-de-design/zone-hero/index.html)
+7. [Zone related links](https://valentedylan92.github.io/composants-de-design/zone-related-links/index.html)
+8. [Zone Story img / text](https://valentedylan92.github.io/composants-de-design/zone-story-img-text/index.html)
+9. [Custom numeric counters](https://valentedylan92.github.io/composants-de-design/custom-numeric-counters/index.html)
+10. [Ecommerce catalog](https://valentedylan92.github.io/composants-de-design/ecommerce-catalogue/index.html)
 

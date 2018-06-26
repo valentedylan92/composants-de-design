@@ -49,6 +49,9 @@
     width: 170px;
     display: block;
     margin: auto;
+    /*Only to view the border of the img used*/
+    border : 1px solid black;
+
   }
   &__descriptif{
     @include flex(column,flex-start, flex-start);
