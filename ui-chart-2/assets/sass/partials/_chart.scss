@@ -1,0 +1,115 @@
+.section {
+  height: 100vh;
+  width: 100vw;
+  background-color: #dbdad9;
+  @include center-flex();
+  font-family: 'Open sans','Arial', sans-serif;
+  color: white;
+}
+
+.chart{
+  background-color: white;
+  width: 330px;
+  height: 515px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  &__container{
+    background: #4285F4;
+    border-radius: 3px;
+    min-height: 495px;
+    box-sizing: border-box;
+  }
+  &__inner{
+    padding: 20px 25px 25px 25px;
+
+  }
+  &__user{
+    margin-bottom: 35px;
+  }
+  &__title{
+    font-size :14px;
+    margin-bottom: 20px;
+  }
+  &__number{
+    font-size: 45px;
+    font-weight: 300;
+  }
+  &__graph{
+    margin-bottom: 30px;
+  }
+  &__subtitle{
+    font-size: 11px;
+    width: 100%;
+    border-bottom: solid #649BF6 1px;
+    padding-bottom: 5px;
+  }
+
+  &__report{
+  padding-top: 10px;
+  border-top: solid #649BF6 1px;
+
+ }
+ &__cta{
+   color: white;
+   font-size: 13px;
+   text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 25px;
+    display: block;
+ }
+
+}
+
+.bars__container{
+  min-height: 100px;
+  @include flex(row,space-between,flex-end)
+}
+
+.bar{
+  width: 8px;
+  height: 35px;
+  background: #D9E6FD;
+}
+
+.array{
+  &__row{
+    @include flex(row,space-between,center);
+    padding: 6px 0;
+    border-bottom: solid #649BF6 1px;
+    &:last-child{
+      border: 0;
+    }
+
+
+    &--title{
+      @include flex(row,space-between,center)
+    }
+  }
+  &__subtitle{
+    font-size: 11px;
+    width: 100%;
+    border-bottom: solid #649BF6 1px;
+    padding-bottom: 5px;
+    &.right{
+      width: inherit;
+    }
+
+  }
+  &__info{
+    font-size: 13px;
+  }
+
+  &__number{
+    font-size: 13px;
+  }
+}
+
+
+@for $i from 20 through 100 {
+    .bar-#{$i} {
+        height: 1px*$i;
+    }
+}
