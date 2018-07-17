@@ -22,3 +22,4 @@
 9. [Custom numeric counters](https://valentedylan92.github.io/composants-de-design/custom-numeric-counters/index.html)
 10. [Ecommerce catalog](https://valentedylan92.github.io/composants-de-design/ecommerce-catalogue/index.html)
 11. [UI chart 2](https://valentedylan92.github.io/composants-de-design/ui-chart-2/index.html)
+12. [Card Small](https://valentedylan92.github.io/composants-de-design/card-small/index.html)

@@ -69,13 +69,11 @@
     color: #323233;
     text-decoration: none;
   }
-
   &__cat::before{
     content: "in";
     padding-right: 5px;
     color: #9B9C9D;
   }
-
   &__date,&__time{
     font-size: 12px;
     color: #9B9C9D;

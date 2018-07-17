@@ -1,0 +1,170 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  background-color: #dbdad9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans','Arial', sans-serif;
+  color: white;
+}
+
+.card {
+  height: 265px;
+  width: 495px;
+  background: #FBFCFD;
+  box-sizing: border-box;
+  padding: 3px;
+}
+.card__inner {
+  border: 1px solid #E5E5E5;
+  height: 259px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card__left {
+  height: 259px;
+  width: 200px;
+  background: url("http://placekitten.com/200/285") no-repeat center;
+}
+.card__right {
+  height: 259px;
+  width: 285px;
+  padding: 25px 20px 15px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3B3B3B;
+  line-height: 1.2;
+}
+.card__subtitle {
+  color: #8F8F8F;
+  line-height: 1.2;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.card__user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: 'Open Sans','Arial', sans-serif;
+  width: 100%;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.user__left {
+  margin-right: 10px;
+}
+.user__img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+.user__name {
+  font-size: 12px;
+  margin-bottom: 3px;
+  display: inline-block;
+  color: #323233;
+  text-decoration: none;
+}
+.user__date, .user__time {
+  font-size: 12px;
+  color: #9B9C9D;
+}
+.user__time {
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+}
+.user__time::before {
+  content: ".";
+  color: #9B9C9D;
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: -9px;
+  font-weight: 700;
+}
+
+.icon {
+  color: #9B9C9D;
+  font-size: 18px;
+}
+.icon_flag {
+  margin-right: 10px;
+}
+.icon_arrow {
+  font-size: 25px;
+}
