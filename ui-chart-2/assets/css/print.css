@@ -62,7 +62,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'Open sans','Arial', sans-serif;
+  font-family: 'Roboto','Arial', sans-serif;
   color: white;
 }
 
@@ -80,7 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
 }
 .chart__inner {
-  padding: 20px 25px 25px 25px;
+  padding: 20px 25px 20px 25px;
 }
 .chart__user {
   margin-bottom: 35px;
@@ -90,7 +90,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 20px;
 }
 .chart__number {
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 300;
 }
 .chart__graph {
@@ -103,8 +103,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-bottom: 5px;
 }
 .chart__report {
-  padding-top: 10px;
   border-top: solid #649BF6 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  padding-right: 20px;
 }
 .chart__cta {
   color: white;
@@ -114,8 +119,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: right;
   box-sizing: border-box;
   width: 100%;
-  padding-right: 25px;
   display: block;
+}
+.chart_icon {
+  margin-left: 15px;
+  font-size: 20px;
 }
 
 .bars__container {
@@ -137,7 +145,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 0;
+  padding: 7px 0 7px 3px;
   border-bottom: solid #649BF6 1px;
 }
 .array__row:last-child {
