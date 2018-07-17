@@ -4,8 +4,8 @@
 - Mise en pratique du SCSS et de Sass.
 
 ## Objectif personnel :
-- Créer un "Starter pack" possedant tous les fichiers Scss nécessaire pour la création d'un nouveau projets ( mixins, variable,...) 
-## Objectif Bonus : 
+- Créer un "Starter pack" possedant tous les fichiers Scss nécessaire pour la création d'un nouveau projets ( mixins, variable,...)
+## Objectif Bonus :
 - Rassembler les différents composants sur un seul fichier HTML
 - Responsive Design
 
@@ -21,4 +21,4 @@
 8. [Zone Story img / text](https://valentedylan92.github.io/composants-de-design/zone-story-img-text/index.html)
 9. [Custom numeric counters](https://valentedylan92.github.io/composants-de-design/custom-numeric-counters/index.html)
 10. [Ecommerce catalog](https://valentedylan92.github.io/composants-de-design/ecommerce-catalogue/index.html)
-
+11. [UI chart 2](https://valentedylan92.github.io/composants-de-design/ui-chart-2/index.html)
