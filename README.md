@@ -25,3 +25,4 @@
 12. [Card Small](https://valentedylan92.github.io/composants-de-design/card-small/index.html)
 13. [Ecommerce Badge](https://valentedylan92.github.io/composants-de-design/ecommerce-badge/index.html)
 14. [Quote testimonial](https://valentedylan92.github.io/composants-de-design/quote-testimonial/index.html)
+14. [Card small popup](https://valentedylan92.github.io/composants-de-design/card-small-popup/index.html)
