@@ -1,0 +1,112 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+  background-color: #dbdad9;
+  @include center-flex();
+  font-family: 'Roboto','Arial', sans-serif;
+}
+.section{
+  height: 455px;
+  width: 505px;
+  box-sizing: border-box;
+  padding: 5px 2px 3px 10px;
+  background: #f2f2f2;
+  &__title{
+    font-size: 18px;
+    color:#828282;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+}
+
+.array{
+  width: 490px;
+  height: 360px;
+  padding: 20px 20px 10px 25px;
+  background: white;
+  box-sizing: border-box;
+  &__row{
+    @include flex(row,space-between,center);
+    padding: 7px 0 7px 5px;
+    border-bottom: solid #ebebeb 1px;
+    &:last-child{
+      border: 0;
+    }
+    &--title{
+      @include flex(row,space-between,center);
+      border-bottom: solid #ebebeb 1px;
+      color:#828282;
+      font-size: 14px;
+      padding-bottom: 15px;
+    }
+  }
+  &__subtitle{
+    width: 290px;
+    &--middle{
+      width: 75px;
+      text-align: center;
+    }
+    &--right{
+      width: 70px;
+      text-align: right;
+    }
+
+  }
+  &__info{
+    font-size: 13px;
+    width: 290px;
+  }
+
+  &__number{
+    font-size: 13px;
+    width: 75px;
+    text-align: center;
+  }
+
+  &__count{
+    width:65px;
+    font-size: 14px;
+    text-align: right;
+  }
+  &__bottom{
+  border-top: solid #ebebeb 1px;
+  @include flex(row,space-between,center);
+  height:40px;
+  box-sizing: border-box;
+  background: white;
+  padding: 0 25px 0 20px;
+ }
+ &__cta{
+   font-size: 13px;
+   text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+    color :#85B4E9;
+    box-sizing: border-box;
+    display: block;
+ }
+ &__dropdown{
+   font-size: 13px;
+   color: #757575;
+   position: relative;
+   &::after{
+     content: "";
+     display: block;
+     width: 0;
+     height: 0;
+     border-radius: 1px;
+     border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+     border-top: 5px solid #757575;
+     position: absolute;
+     top: 5px;
+     right: -15px;
+   }
+ }
+}
+
+.icon{
+  margin-left: 15px;
+}
