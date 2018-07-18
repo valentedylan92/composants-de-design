@@ -27,3 +27,4 @@
 14. [Quote testimonial](https://valentedylan92.github.io/composants-de-design/quote-testimonial/index.html)
 15. [Card small popup](https://valentedylan92.github.io/composants-de-design/card-small-popup/index.html)
 16. [Card full height](https://valentedylan92.github.io/composants-de-design/card-full-height/index.html)
+17. [UI table](https://valentedylan92.github.io/composants-de-design/ui-table/index.html)
