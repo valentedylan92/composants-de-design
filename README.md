@@ -29,3 +29,4 @@
 16. [Card full height](https://valentedylan92.github.io/composants-de-design/card-full-height/index.html)
 17. [UI table](https://valentedylan92.github.io/composants-de-design/ui-table/index.html)
 18. [Layout staff](https://valentedylan92.github.io/composants-de-design/layout-staff/index.html)
+18. [Footer mega menu](https://valentedylan92.github.io/composants-de-design/footer-mega-menu/index.html)
