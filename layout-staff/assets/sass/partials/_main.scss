@@ -1,0 +1,54 @@
+.section--staff{
+  width: 100%;
+  font-family:'Lato',sans-serif;
+  background: white;
+}
+
+.staff{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  &__title{
+    text-transform: uppercase;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: 700;
+  }
+  &__inner{
+    @include flex(row,flex-start,flex-start);
+    flex-wrap: wrap;
+  }
+  &__item{
+    width: 25%;
+    text-align: center;
+    margin-bottom: 30px;
+    min-height: 600px;
+    transition: background 1s ease;
+    &:hover{
+      background: #eeeeef;
+    }
+  }
+  &__img{
+    width: 250px;
+  }
+  &__name{
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 15px
+  }
+  &__job{
+    font-size: 14px;
+    color:#c5c5c5;
+    margin-bottom: 15px;
+  }
+  &__description{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 0 50px;
+  }
+}

@@ -1,0 +1,253 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.section--nav {
+  height: 100px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav {
+  width: 100%;
+  height: 100px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__img {
+  width: 70px;
+}
+.nav__item {
+  width: 110px;
+  line-height: 100px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.nav__item:hover {
+  border-bottom: 10px solid #63be50;
+}
+.nav__link {
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.section--header {
+  width: 100%;
+  background: #63be50;
+  font-family: 'Lato',sans-serif;
+}
+
+.header {
+  width: 100%;
+  max-width: 1200px;
+  height: 345px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  padding: 90px 120px 0 120px;
+}
+.header__title {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.header__text {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.section--staff {
+  width: 100%;
+  font-family: 'Lato',sans-serif;
+  background: white;
+}
+
+.staff {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+}
+.staff__title {
+  text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+.staff__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.staff__item {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 30px;
+  min-height: 600px;
+  transition: background 1s ease;
+}
+.staff__item:hover {
+  background: #eeeeef;
+}
+.staff__img {
+  width: 250px;
+}
+.staff__name {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.staff__job {
+  font-size: 14px;
+  color: #c5c5c5;
+  margin-bottom: 15px;
+}
+.staff__description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 0 50px;
+}
+
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: #eeeeef;
+  box-sizing: border-box;
+  font-family: 'Lato',sans-serif;
+}
+.footer__inner {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 120px;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 35px 20px 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.footer__subtext {
+  margin-right: auto;
+  color: #7b7874;
+  font-size: 14px;
+}
+
+.icon__copy {
+  font-size: 13px;
+  margin-right: 3px;
+}
+
+.menu, .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menu {
+  width: 140px;
+  margin-right: 40px;
+}
+.menu__link {
+  color: #7b7874;
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.7s ease;
+}
+.menu__link:hover {
+  color: #51504f;
+}
+
+.social {
+  width: 105px;
+}
+.social__link {
+  color: #7b7874;
+  font-size: 0px;
+  text-decoration: none;
+  transition: color 0.7s ease;
+}
+.social__link:hover {
+  color: #51504f;
+}
+.social__icon {
+  font-size: 12px;
+}

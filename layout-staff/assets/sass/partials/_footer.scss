@@ -1,0 +1,62 @@
+
+.footer{
+  width: 100%;
+  height: 120px;
+  background-color: #eeeeef;
+  box-sizing: border-box;
+  font-family: 'Lato',sans-serif;
+
+  &__inner{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 120px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 35px 20px 0 20px;
+    @include flex(row,flex-end,flex-start)
+  }
+  &__subtext{
+    margin-right: auto;
+    color: #7b7874;
+    font-size: 14px;
+  }
+}
+
+.icon__copy{
+  font-size: 13px;
+  margin-right: 3px;
+}
+.menu, .social{
+  @include flex(row,space-between,flex-start)
+}
+
+.menu{
+  width: 140px;
+  margin-right: 40px;
+  &__link{
+      color: #7b7874;
+      font-size: 12px;
+      text-decoration: none;
+      transition: color 0.7s ease;
+  }
+  &__link:hover{
+    color: #51504f;
+  }
+}
+
+.social{
+  width: 105px;
+  &__link{
+      color: #7b7874;
+      font-size: 0px;
+      text-decoration: none;
+      transition: color 0.7s ease;
+  }
+  &__link:hover{
+    color: #51504f;
+  }
+  &__icon{
+    font-size: 12px;
+  }
+}
