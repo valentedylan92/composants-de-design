@@ -1,0 +1,131 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #dbdad9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer {
+  height: 640px;
+  width: 1425px;
+  padding: 70px 120px 0 160px;
+  background-color: #203546;
+  box-sizing: border-box;
+}
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer__img {
+  width: 190px;
+  height: 160px;
+}
+.footer__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer__subtitle {
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 20px;
+  color: white;
+}
+.footer__lists {
+  padding-left: 80px;
+  padding-top: 10px;
+}
+.footer__list {
+  margin-bottom: 100px;
+}
+.footer__item {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+}
+.footer__link {
+  color: #B8CCDE;
+  text-decoration: none;
+}
+
+.icon {
+  position: absolute;
+  color: #B8CCDE;
+  left: -20px;
+  font-size: 13px;
+}
+
+input {
+  border: 0;
+  background-color: #203546;
+  border-bottom: 1px solid #B8CCDE;
+  width: 100%;
+  padding: 5px;
+  color: #B8CCDE;
+  margin-top: 150px;
+  font-size: 19px;
+}
