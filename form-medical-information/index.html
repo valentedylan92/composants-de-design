@@ -11,12 +11,12 @@
 </head>
 <body>
   <main class="container">
-    <section class="section section--sidebar">
+    <section class="section section--form">
       <h2 class="form__title">Emergency Contact and Medical Information</h2>
       <form action="" id="form-emergency">
         <div class="form__profil">
           <div class="form__row">
-            <div class="form__container">
+            <div class="form__container left">
               <h4 class="form__subtitle">Name</h4>
               <div class="form__inputs">
                 <input type="text" name="first-profil" class="form__firstname">
@@ -30,9 +30,9 @@
           </div>
 
           <div class="form__row">
-            <div class="container">
+            <div class="form__container left">
               <h4 class="form__subtitle">Gender</h4>
-              <div class="form__inputs">
+              <div class="form__inputs--large">
                 <select name="gender-profil" id="gender-emergency" class="form__gender">
                   <option value="Male" class="form__option">Male</option>
                   <option value="Female" class="form__option">Female</option>
@@ -59,7 +59,7 @@
         </div>
         <div class="form__emergency">
           <div class="form__row">
-            <div class="form__container">
+            <div class="form__container left">
               <h4 class="form__subtitle">Name</h4>
               <div class="form__inputs">
                 <input type="text" name="first-emergency" class="form__firstname">
@@ -72,7 +72,7 @@
             </div>
             <div class="form__container">
               <h4 class="form__subtitle">Relationship</h4>
-              <div class="form__inputs">
+              <div class="form__inputs--large">
                 <input type="text" name="relation-emergency" class="form__relation">
               </div>
             </div>
@@ -81,7 +81,7 @@
           <div class="form__row">
             <div class="form__container--large">
               <h4 class="form__subtitle">Adress</h4>
-              <div class="form__inputs">
+              <div class="form__inputs--large">
                 <input type="text" name="street-emergency" class="form__street">
                 <label for="street-emergency">Street Adress</label>
               </div>
@@ -90,7 +90,7 @@
 
           <div class="form__row">
             <div class="form__container--large">
-              <div class="form__inputs">
+              <div class="form__inputs--large">
                 <input type="text" name="line2-emergency" class="form__adressSup">
                 <label for="line2-emergency">Adress line 2</label>
               </div>
@@ -98,14 +98,14 @@
           </div>
 
           <div class="form__row">
-            <div class="form__container">
-              <div class="form__inputs">
+            <div class="form__container left">
+              <div class="form__inputs--large">
                 <input type="text" name="city-emergency" class="form__city">
                 <label for="city-emergency">City</label>
               </div>
             </div>
             <div class="form__container">
-              <div class="form__inputs">
+              <div class="form__inputs--large">
                 <input type="text" name="state-emergency" class="form__state">
                 <label for="state-emergency">State / Province / Region</label>
               </div>
@@ -113,14 +113,14 @@
           </div>
 
           <div class="form__row">
-            <div class="form__container">
-              <div class="form__inputs">
+            <div class="form__container left">
+              <div class="form__inputs--large">
                 <input type="text" name="zipcode-emergency" class="form__zipcode">
                 <label for="zipcode-emergency">City</label>
               </div>
             </div>
             <div class="form__container">
-              <div class="form__inputs">
+              <div class="form__inputs--large">
                 <select name="country-profil" id="country-emergency" class="form__country">
                   <option value="Belgium" class="form__option">Belgium</option>
                   <option value="France" class="form__option">France</option>
@@ -130,7 +130,7 @@
             </div>
           </div>
           <div class="form__row">
-            <div class="form__container">
+            <div class="form__container left">
               <h4 class="form__subtitle">Home phone</h4>
               <div class="form__inputs">
                 <input type="text" name="homeNb-emergency" class="form__phone">
@@ -141,7 +141,7 @@
                 <label for="phone-emergency">###</label>
               </div>
               <div class="form__inputs">
-                <input type="text" name="homeNb-emergency" class="form__phone">
+                <input type="text" name="homeNb-emergency" class="form__phone--large">
                 <label for="phone-emergency">###</label>
               </div>
             </div>
@@ -156,14 +156,77 @@
                 <label for="phone-emergency">###</label>
               </div>
               <div class="form__inputs">
-                <input type="text" name="workNb-emergency" class="form__phone">
+                <input type="text" name="workNb-emergency" class="form__phone--large">
                 <label for="phone-emergency">###</label>
               </div>
             </div>
           </div>
         </div>
         <div class="form__medical">
-          
+          <div class="form__row">
+            <div class="form__container--large">
+              <h4 class="form__subtitle">Hospital / Clinic preference</h4>
+              <div class="form__inputs--large">
+                <input type="text" name="preference-medical" class="form__preference">
+              </div>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__container left">
+              <h4 class="form__subtitle">Insurance Company</h4>
+              <div class="form__inputs--large">
+                <input type="text" name="insurance-medical" class="form__insurance">
+              </div>
+            </div>
+            <div class="form__container">
+              <h4 class="form__subtitle">Policy Number</h4>
+              <div class="form__inputs--large">
+                <input type="text" name="policy-medical" class="form__policy">
+              </div>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__container left">
+              <h4 class="form__subtitle">Physician's Name</h4>
+              <div class="form__inputs--large">
+                <input type="text" name="physician-medical" class="form__physician">
+              </div>
+            </div>
+
+            <div class="form__container">
+              <h4 class="form__subtitle">Phone number</h4>
+              <div class="form__inputs">
+                <input type="text" name="physNb-medical" class="form__phone">
+                <label for="phone-medical">###</label>
+              </div>
+              <div class="form__inputs">
+                <input type="text" name="physNb-medical" class="form__phone">
+                <label for="phone-medical">###</label>
+              </div>
+              <div class="form__inputs">
+                <input type="text" name="physNb-medical" class="form__phone--large">
+                <label for="phone-medical">###</label>
+              </div>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__container--large">
+              <h4 class="form__subtitle">Allergies / Special health considerations</h4>
+              <div class="form__inputs--large">
+                <textarea name="spec-medical"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__container--large">
+              <div class="form__inputs">
+                <input type="submit" name="form-submit" value="Submit">
+              </div>
+            </div>
+          </div>
+
         </div>
       </form>
     </section>
