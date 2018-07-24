@@ -23,7 +23,7 @@
   }
 
   &__profil,&__medical,&__emergency{
-    border-top: 1px solid #ececec;
+    border-top: 1px solid #bfb9b9;
   }
 
   &__subtitle{
@@ -55,6 +55,11 @@
     }
   }
 
+  &__sectionName{
+    margin: 10px 0;
+    font-weight: 600;
+  }
+
   &__firstname{
     width: 60px
   }
@@ -67,6 +72,13 @@
     &--large{
       width: 40px;
     }
+
+    // &--middle{
+    //   background: grey;
+    //   &:before{
+    //     content: "-"
+    //   }
+    // }
   }
 
   &__days,&__months{
@@ -89,8 +101,13 @@ textarea{
 }
 input{
   width: 100%;
+  border-top: 2px solid grey;
 }
 
 select{
   width: 100%;
+}
+
+.small-middle,.middle{
+  margin: 5px 10px 0 5px;
 }

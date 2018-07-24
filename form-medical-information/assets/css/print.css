@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-bottom: 15px;
 }
 .form__profil, .form__medical, .form__emergency {
-  border-top: 1px solid #ececec;
+  border-top: 1px solid #bfb9b9;
 }
 .form__subtitle {
   font-size: 13px;
@@ -109,6 +109,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .form__inputs--large {
   width: 100%;
+}
+.form__sectionName {
+  margin: 10px 0;
+  font-weight: 600;
 }
 .form__firstname {
   width: 60px;
@@ -142,8 +146,13 @@ textarea {
 
 input {
   width: 100%;
+  border-top: 2px solid grey;
 }
 
 select {
   width: 100%;
+}
+
+.small-middle, .middle {
+  margin: 5px 10px 0 5px;
 }
