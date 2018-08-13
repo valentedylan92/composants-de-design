@@ -72,6 +72,10 @@
     width: 110px
   }
 
+  // &__separator{
+  //   display: block;
+  // }
+
   &__phone{
     width:30px;
     &--large{
@@ -116,4 +120,30 @@ select{
 
 .small-middle,.middle{
   margin: 5px 10px 0 5px;
+}
+
+.input-middle{
+  padding-left: 11px;
+  padding-right: 5px;
+  position: relative;
+  &::before{
+    content:"\00af";
+    height: 10px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 1px;
+    font-weight: bold;
+  }
+  &::after{
+    content: "\00af";
+    height: 10px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: 14px;
+    font-weight: bold;
+    right: -1px;
+  }
 }
