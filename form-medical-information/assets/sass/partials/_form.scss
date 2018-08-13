@@ -1,0 +1,119 @@
+.container{
+  height: 1200px;
+  width: 100%;
+  @include center-flex();
+  background-color: #dbdad9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section--form{
+  width: 635px;
+  // height: 1120px;
+  background: white;
+  padding: 20px 15px 10px 25px;
+  box-sizing: border-box;
+}
+
+.form{
+  &__title{
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  &__submit{
+    @include button(white,black,2px,7px);
+    border: 1px #bfb9b9 solid;
+  }
+
+  &__profil,&__medical,&__emergency{
+    border-top: 1px solid #bfb9b9;
+  }
+
+  &__subtitle{
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px 0;
+  }
+  &__row{
+    @include flex(row,flex-start,flex-start);
+    margin-bottom: 10px
+  }
+  &__container{
+    width: 50%;
+    padding-left: 10px;
+
+    &.left{
+      padding-right: 10px;
+      padding-left: 0px;
+    }
+    &--large{
+      width: 100%;
+    }
+  }
+
+  &__inputs{
+    display: inline-block;
+    &--large{
+      width: 100%;
+    }
+  }
+
+  &__sectionName{
+    margin: 12px 0;
+    font-weight: 600;
+  }
+
+  &__firstname{
+    width: 60px
+  }
+  &__lastname{
+    width: 110px
+  }
+
+  &__phone{
+    width:30px;
+    &--large{
+      width: 40px;
+    }
+
+    // &--middle{
+    //   background: grey;
+    //   &:before{
+    //     content: "-"
+    //   }
+    // }
+  }
+
+  &__days,&__months{
+    width: 30px;
+  }
+  &__years{
+    width: 40px;
+  }
+}
+
+label{
+  font-size: 11px;
+  margin-top: 5px;
+  display: block;
+}
+
+textarea{
+  width: 100%;
+  border-top: 2px solid grey;
+  height: 120px;
+}
+input{
+  width: 100%;
+  border-top: 2px solid grey;
+}
+
+select{
+  width: 100%;
+}
+
+.small-middle,.middle{
+  margin: 5px 10px 0 5px;
+}
