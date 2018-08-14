@@ -6,7 +6,7 @@
 ## Objectif personnel :
 - Créer un "Starter pack" possedant tous les fichiers Scss nécessaire pour la création d'un nouveau projets ( mixins, variable,...)
 ## Objectif Bonus :
-- Rassembler les différents composants sur un seul fichier HTML
+- Rassembler les différents composants sur [un seul fichier HTML](https://valentedylan92.github.io/composants-de-design/index.html)
 - Responsive Design
 
 ## Liens des différents composants :
